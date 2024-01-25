@@ -9,4 +9,4 @@ $aujourdui = date_create(); //Recuperer la date du jour
 
 $interval = date_diff($dateNaissance, $aujourdui); //Interval entre les 2 dates
 
-echo $interval->format("%y ans-%m mois-%d jours "); //Affichage
+echo $interval->format("Age de la personne : %y ans-%m mois-%d jours "); //Affichage
