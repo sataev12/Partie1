@@ -146,9 +146,6 @@ $nbMarque = count($marque);
 
 echo "<h3>Method for</h3>";
 
-for ($i=0;$ $i < $nbMarque; $i++) { 
-    echo $marque[$i]."<br>";
-}
 
 echo "<h3>Method while</h3>";
 // $i = 0;
@@ -158,3 +155,48 @@ echo "<h3>Method while</h3>";
 // }
 
 echo "<h3>Method for</h3>";
+
+//Tableau associative
+//clé -> valeur(attention la clé doit être unique)
+
+
+
+$formateurs = [
+    "stephane" => "mulhouse",
+    "virgile" => "strasbourg",
+    "micka" => "strasbourg",
+    "dominique" => "colmar"
+];
+
+var_dump($formateurs);
+
+//ksort -> trier sur la clé(A-Z)
+//krsort -> trier sur la clé (Z-A) r = reverse
+//asort -> trier sur la valeur(A -Z)
+//arsort -> trier sur la valeur(Z - A)
+
+
+ksort($formateurs);
+
+foreach ($formateurs as $prenom => $ville) {
+    echo ucfirst($prenom)." habite à ".mb_strtoupper($ville). "<br>";
+}
+
+
+$clients = [
+    "stephane" => [
+        "adresse" => "10 rue de la Gare",
+        "cp" => "67000",
+        "ville" => "STRASBOURG",
+        "tel" => "09875643"
+    ],
+
+    "virgile" => [
+        "adresse" => "1 rue Principal",
+        "cp" => "68000",
+        "ville" => "MULHOUSE",
+        "tel" => "098756886"
+    ]
+    ];
+
+    var_dump($clients);
