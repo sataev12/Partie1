@@ -237,55 +237,57 @@ $sommeNotes = array_sum($notes);
 
 // phpinfo();die;
 
-echo calculerMoyenne([9, 10, 11, 18, 12])."<br>";
-echo calculerMoyenne([9, 10, 11, 18, 12, 15, 9.7])."<br>";
+// echo calculerMoyenne([9, 10, 11, 18, 12])."<br>";
+// echo calculerMoyenne([9, 10, 11, 18, 12, 15, 9.7])."<br>";
 
-$eleves = [
-    "cindy" => [12, 9, 19, 17, 12, 13],
-    "pascal" => [8, 9, 12, 10, 17]
-];
+// $eleves = [
+//     "cindy" => [12, 9, 19, 17, 12, 13],
+//     "pascal" => [8, 9, 12, 10, 17]
+// ];
 
-foreach ($eleves as $prenom => $notes) {
-    echo "La moyenne de $prenom est : ".calculerMoyenne($notes)."<br>";
-}
+// foreach ($eleves as $prenom => $notes) {
+//     echo "La moyenne de $prenom est : ".calculerMoyenne($notes)."<br>";
+// }
 
-function calculerMoyenne(array $notes) : float {
-    $nbNotes = count($notes);
-    $sommeNotes = array_sum($notes);
+// function calculerMoyenne(array $notes) : float {
+//     $nbNotes = count($notes);
+//     $sommeNotes = array_sum($notes);
     
-    $moyenne = round($sommeNotes / $nbNotes, 2);
+//     $moyenne = round($sommeNotes / $nbNotes, 2);
 
-     return $moyenne;
-}
+//      return $moyenne;
+// }
 
-echo pairOuImpaire(4);
-echo pairOuImpaire(5);
+// echo pairOuImpaire(4);
+// echo pairOuImpaire(5);
 
-function pairOuImpaire($nombre) : string {
+// function pairOuImpaire($nombre) : string {
 
-    if($nombre % 2 == 0) {  // % = modulo
-        $resultat = "pair<br>";
-    }else{
-        $resultat = "impaire<br>";
-    }
-    return "$nombre est $resultat";
-}
+//     if($nombre % 2 == 0) {  // % = modulo
+//         $resultat = "pair<br>";
+//     }else{
+//         $resultat = "impaire<br>";
+//     }
+//     return "$nombre est $resultat";
+// }
 
-echo repeteMot("Youpi", 6);
+// echo repeteMot("Youpi", 6);
 
-function repeteMot(string $mot, int $nbRepetitions) {
+// function repeteMot(string $mot, int $nbRepetitions) {
     
-    $resultat = "";
-    foreach (range(1, $nbRepetitions) as $valeur) {
-        $resultat .= $mot." ";
-    }
+//     $resultat = "";
+//     foreach (range(1, $nbRepetitions) as $valeur) {
+//         $resultat .= $mot." ";
+//     }
 
 
 
-    return $resultat;
-}
+//     return $resultat;
+// }
 
-echo str_repeat("BidBule", 10);
+// echo str_repeat("BidBule", 10);
 
 echo "-----------POO----------------------------------------------------------------<br>";
+
+
 
