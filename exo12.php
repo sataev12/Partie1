@@ -10,9 +10,9 @@ respective (français -> "Salut", anglais -> "Hello", espagnol -> "Hola")</p>
 
 //Creation de tableau
 $tableau = [
-    "Mickael" => "Salut",
-    "Virgile" => "Hola",
-    "Marie-Claire" => "Hello"
+    "Mickael" => "FRA",
+    "Virgile" => "ESP",
+    "Marie-Claire" => "ENG"
 ];
 
 //Trier de A-Z
@@ -20,5 +20,22 @@ ksort($tableau);
 
 //Boocle
 foreach ($tableau as $prenom => $associationsLangue) {
-    echo "$associationsLangue $prenom<br>";
+
+    switch ($associationsLangue) {
+        case "FRA":
+            echo "Salut {$prenom}<br>";
+            break;
+        case "ESP":
+                echo "Hola {$prenom}<br>";
+            break;
+        case "ENG":
+                echo "Hello {$prenom}<br>";
+            break;    
+        default:
+            break;
+    }
+
+
+
+    
 }
